@@ -321,15 +321,13 @@ console.log('Exercise 9 Correct Result: ', 3)
 // - Remember, reduce takes a callback function and an initial value for the accumulator.
 
 
+
 let inventorLifeExpectancy = inventors.map((e) => {
     return e.passed - e.year;
-
 })
-console.log(inventorLifeExpectancy)
 
 let totalYearsLived = inventorLifeExpectancy.reduce(
     (accumulator, currentValue) => accumulator + currentValue);
-
 
 
 // Check your return value:
