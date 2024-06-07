@@ -349,14 +349,14 @@ console.log('Bonus 1 Correct Result: ', 861)
 // - Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
 
 
-let travelMethodCounts = travelMethods.reduce(function(accumulator, count){
-    if (accumulator[travelMethods]) {
-        accumulator[count] = accumulator[count] +1;
+let travelMethodCounts = travelMethods.reduce(function(accumulator, method){
+    if (accumulator[method]) {
+        accumulator[method] = accumulator[method] +1;
     } else {
-        accumulator[count] = 1;
+        accumulator[method] = 1;
     }
     return accumulator;
-}, 0);
+}, {});
 
 
 
